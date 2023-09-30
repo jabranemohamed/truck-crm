@@ -16,10 +16,10 @@
 
 ### Usage of the application
 
--1 . Under src/main/js => ng serve
--2 . Start the back also (you need postgres DB or docker )
--3 . Generate function: It will generate random data (Driver,Route,Truck and Journey)
--4 . To progress the workflow from Filling truck to unloading truck , you need just to click on Workflow button and wait :)
+- 1 . Under src/main/js => ng serve
+- 2 . Start the back also (you need postgres DB or docker )
+- 3 . Generate function: It will generate random data (Driver,Route,Truck and Journey)
+- 4 . To progress the workflow from Filling truck to unloading truck , you need just to click on Workflow button and wait :)
 
 ![Screenshot](img/img1.png)
 
