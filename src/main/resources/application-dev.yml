@@ -1,0 +1,26 @@
+spring:
+  server:
+    port: 8081
+  kafka:
+    template:
+      default-topic: trucks-events
+    consumer:
+      bootstrap-servers:  localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.JsonSerializer
+      group-id: trucks-events-listener-group
+      auto-offset-reset: latest
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.JsonSerializer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/truck_crm
+    username: postgres
+    password: postgres
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
